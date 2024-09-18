@@ -9,8 +9,9 @@ A Countdown Timer designed to increase or decrease the time at 1 second interval
 - Validations are present for any illegal values.
 - If Time value is "00:00:00" and user clicks on Start, the Timer will increase at 1 second interval.
 - If Timer is Paused while it was incrementing, on clicking Start again, it will resume from the time it was paused and continue the increment.
-- If Timer value is put in by the user and Start is clicked, then Timer will decrement at an interval of 1 second unitl it reaches "00:00:00".
+- If Timer value is put in by the user when the Timer value is "00:00:00" and Start is clicked, then Timer will decrement at an interval of 1 second until it reaches "00:00:00".
 - If Timer is Paused while it was decrementing, on clicking Start again, it will resume from the time it was paused and continue the decrement.
+- If Timer is Paused and user manually inputs some value, on clicking Start again, it will continue its behaviour it was on, ie. if it was incrementing, it will continue to do so. Same for decrement case.
 - If the Timer reaches the time: "99:59:59", it will reset to "00:00:00" and start again.
 
 Link to the app: https://noob0799.github.io/CountdownTimer/
