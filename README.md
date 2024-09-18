@@ -13,7 +13,7 @@ A Countdown Timer designed to increase or decrease the time at 1 second interval
 - If Timer is Paused while it was decrementing, on clicking Start again, it will resume from the time it was paused and continue the decrement.
 - If the Timer reaches the time: "99:59:59", it will reset to "00:00:00" and start again.
 
-Live app link: https://noob0799.github.io/CountdownTimer/
+Link to the app: https://noob0799.github.io/CountdownTimer/
 
 ## Reset/Initial State of Timer
 ![image](https://github.com/user-attachments/assets/756f7999-498e-4f68-a3d2-9fcfca7710ec)
