@@ -40,6 +40,10 @@
             minutesVal = Number(minutesInput.value),
             secondsVal = Number(secondsInput.value);
 
+        hoursInput.setAttribute('readonly', true);
+        minutesInput.setAttribute('readonly', true);
+        secondsInput.setAttribute('readonly', true);
+
         let totalSeconds = hoursVal * 3600 + minutesVal * 60 + secondsVal;
         if(totalSeconds == 0) {
             increaseTimer = true;
@@ -73,6 +77,9 @@
     }
 
     const handlePauseTimer = () => {
+        hoursInput.removeAttribute('readonly');
+        minutesInput.removeAttribute('readonly');
+        secondsInput.removeAttribute('readonly');
         startBtn.classList.remove('hide');
         pauseBtn.classList.add('hide');
         clearInterval(timerInterval);
@@ -82,6 +89,9 @@
         hoursInput.value = '00';
         minutesInput.value = '00';
         secondsInput.value = '00';
+        hoursInput.removeAttribute('readonly');
+        minutesInput.removeAttribute('readonly');
+        secondsInput.removeAttribute('readonly');
         startBtn.classList.remove('hide');
         pauseBtn.classList.add('hide');
         clearInterval(timerInterval);
