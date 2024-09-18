@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timer-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.timer-container p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.timer-hours > label, .timer-minutes > label, .timer-seconds > label {
+    font-size: 30px;
+    font-weight: 700;
+    color: #36454F;
+}
+
+.timer-hours > input, .timer-minutes > input, .timer-seconds > input {
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #36454F;
+    width: 200px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.timer-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timer-buttons > button {
+    margin: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.start-btn {
+    background-color: green;
+}
+
+.reset-btn {
+    background-color: red;
+}
+
+.pause-btn {
+    background-color: orange;
+}
+
+.hide {
+    display: none;
+}
+
+
+
